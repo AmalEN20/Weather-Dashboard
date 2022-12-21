@@ -24,12 +24,14 @@
       $(".currentWind").append(currentWeather.wind.speed)
       $(".currentHumidity").append(currentWeather.main.humidity)
       console.log(currentWeather)
+
       //   console.log(currentWeather.name); //city name
       //   console.log(currentDate)// current date
       //   console.log(currentWeather.weather[0].main)// weather icon
       //   console.log(currentWeather.main.temp)//Temp
       //   console.log(currentWeather.main.humidity)//Temp
       //   console.log(currentWeather.main.humidity)//Temp
+
       console.log(currentWeather.coord)
       var coordLon = currentWeather.coord.lon;
       var coordLat = currentWeather.coord.lat;
@@ -52,35 +54,35 @@
               $(".currentUV span").css("background-color", "red");
             }
   
-            // Day 1
+            // day 1
             $(".image1").css("background-image", "url(http://openweathermap.org/img/wn/" + weatherData.daily[0].weather[0].icon + "@2x.png)");
             $(".temp1").append(weatherData.daily[0].temp.day)
             $(".wind1").append(weatherData.daily[0].wind_speed)
             $(".humidity1").append(weatherData.daily[0].humidity)
             $(".UV1").append(weatherData.daily[0].uvi)
   
-            // Day 2
+            // day 2
             $(".image2").css("background-image", "url(http://openweathermap.org/img/wn/" + weatherData.daily[1].weather[0].icon + "@2x.png)");
             $(".temp2").append(weatherData.daily[1].temp.day)
             $(".wind2").append(weatherData.daily[1].wind_speed)
             $(".humidity2").append(weatherData.daily[1].humidity)
             $(".UV2").append(weatherData.daily[1].uvi)
   
-            // Day 3
+            // day 3
             $(".image3").css("background-image", "url(http://openweathermap.org/img/wn/" + weatherData.daily[2].weather[0].icon + "@2x.png)");
             $(".temp3").append(weatherData.daily[2].temp.day)
             $(".wind3").append(weatherData.daily[2].wind_speed)
             $(".humidity3").append(weatherData.daily[2].humidity)
             $(".UV3").append(weatherData.daily[2].uvi)
   
-            // Day 4
+            // day 4
             $(".image4").css("background-image", "url(http://openweathermap.org/img/wn/" + weatherData.daily[3].weather[0].icon + "@2x.png)");
             $(".temp4").append(weatherData.daily[3].temp.day)
             $(".wind4").append(weatherData.daily[3].wind_speed)
             $(".humidity4").append(weatherData.daily[3].humidity)
             $(".UV4").append(weatherData.daily[3].uvi)
   
-            // Day 5
+            // day 5
             $(".image5").css("background-image", "url(http://openweathermap.org/img/wn/" + weatherData.daily[4].weather[0].icon + "@2x.png)");
             $(".temp5").append(weatherData.daily[4].temp.day)
             $(".wind5").append(weatherData.daily[4].wind_speed)
